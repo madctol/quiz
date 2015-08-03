@@ -9,5 +9,8 @@ section > div			{ padding: 20px; }
 header, nav, section	{ background: #eee; text-align: center; }
 footer				{ background: #eee; text-align: center; }
 nav span				{ margin: 0px 10px 9px 0px; }
+td					{ padding: 5px; padding-right: 5px; padding-bottom: 5px; }
 
 #ErrorMsgs			{ color: #f61; font-size: small }
+
+.tema				{ background-color: #fff; font-size: 80% }
