@@ -49,3 +49,5 @@ node_modules
 npm-debug.log
 quiz.sqlite
 .env
+quiz.sublime-workspace
+quiz.sublime-project
