@@ -13,4 +13,4 @@ td					{ padding: 5px; padding-right: 5px; padding-bottom: 5px; }
 
 #ErrorMsgs			{ color: #f61; font-size: small }
 
-.tema				{ background-color: #fff; font-size: 80% }
+.tema				{ display:inline; background-color: #fff; font-size: 80% }
