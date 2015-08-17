@@ -35,6 +35,17 @@ app.use(function(req, res, next) {
     if (!req.path.match(/\/login|\/logout/)) {
         req.session.redir = req.path;
     }
+    
+    // Auto logout
+    if (req.session.lastConnection){
+        
+        var sinceLastConn = Date.now() - req.session.lastConnection;
+        console.log("Auto logout: tiempo pasado " + sinceLastConn/1000 + " segundos");
+        
+        if (sinceLastConn > 2*60*1000){
+            delete req.session.user;
+        }
+    }
 
     // Hacer visible req.session en las vistas
     res.locals.session = req.session;
